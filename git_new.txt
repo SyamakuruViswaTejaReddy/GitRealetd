@@ -1,0 +1,68 @@
+New to Git:
+step 1: create github account
+->create repoistory in it ex:CoreJava
+you able to see some commands to intilazile git repo in your local
+//
+echo "# GitRealetd" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Account_Name/CoreJava.git
+git push -u origin main
+//
+
+step2:download git 
+while installing enable "main" not master on installing setting 
+->check the version from command prompt
+cmd:git --version
+C:\Users\sy>git --version
+git version 2.46.0.windows.1  //It will fetch the git version 
+ 
+step3:move to the folder which you want create repo and enter cmd
+
+->C:\professional\CoreJava>git init
+Initialized empty Git repository in C:/professional/CoreJava/.git/
+
+->C:\professional\CoreJava>git add .
+
+->C:\professional\CoreJava>git commit -m "Hello World"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'xyz.(none)')
+
+->C:\professional\CoreJava>git config --global user.email "xyz@gmail.com"
+
+->C:\professional\CoreJava>git config --global user.name "xyz"
+
+->C:\professional\CoreJava>git commit -m "Hello World"
+[main (root-commit) 5e77a3d] Hello World
+ 2 files changed, 9 insertions(+)
+ create mode 100644 HelloWorld.class
+ create mode 100644 HelloWorld.java
+
+->C:\professional\CoreJava>git branch -M main
+
+->C:\professional\CoreJava>git remote add origin https://github.com/SyamakuruViswaTejaReddy/CoreJavaPrograms.git
+
+->C:\professional\CoreJava>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 672 bytes | 336.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SyamakuruViswaTejaReddy/CoreJavaPrograms.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
